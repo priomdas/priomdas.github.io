@@ -4,7 +4,13 @@
 	
 	<style type="text/css">
 
-		@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+		
+
+		@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+		html{
+			scroll-behavior: smooth;
+		}
 
 		ul{
 			list-style-type: none;
@@ -23,7 +29,7 @@
 			color: white;
 			text-decoration: none;
 			display: block;
-			font-family: 'Dancing Script', cursive;
+			font-family: 'Amatic SC';
 			font-size: 40px;
 		}
 
@@ -31,34 +37,39 @@
 			background-color: #A1A1A1;
 		}
 		p{
-			font-family: 'Dancing Script', cursive;
+			
 			color: white;
-			font-size: 60px;
+			font-size: 45px;
 		}
 
-		img{
+		img.profile{
 			height: 300px;
-			border: 5px solid white;
+			border: 8px solid white;
 			border-radius: 50%;
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
 		}
+
+		img{
+			height: 500px;
+			border: 5px solid white
+		}
 		body{
-			background-color: #0f032e;
+			background-color: #ff6738;
 		}
 		.about{
-			height: 500px;
+			height: 1000px;
 
 		}
 
 		.gallery{
-			height: 500px;
+			height: 1000px;
 
 		}
 
 		.contact{
-			height: 500px;
+			height: 1000px;
 
 		}
 
@@ -71,27 +82,37 @@
 <body>
 	<ul>
   <li><a class="active" href="C:\Users\h\Desktop\HTML\home.html" target="-blank">Home</a></li>
-  <li><a href="#news">About</a></li>
+  <li><a href="#about">About</a></li>
   <li><a href="#gallery">Gallery</a></li>
   <li><a href="#contact">Contact</a></li>
 </ul>
 	<p>Hello my name is Priom</p>
-	<img src="IMG1.jpg" alt="profile photo">
+	<img src="IMG1.jpg" alt="profile photo" class="profile">
 	<center> <a href="https://www.instagram.com/priom_krishna_das/" style="text-decoration: none; color: white; "> <h3>Priom Kumar Das</h3> </a>  </center>
 
 
 	<div>
-		<div class="about">
+		<div class="about" id="about">
+			
 			<p>This is About Section</p>
 			
 		</div>
 
-		<div class="gallery">
+		<div class="gallery" id="gallery">
 			<p>This is Gallery Section</p> 
+
+			<div>
+				<img src="03.jpg"> <img src="01.jpg"> <img src="02.jpg"> <img src="04.jpg"> <img src="05.jpg"><img src="06.jpg"><img src="07.jpg"><img src="08.png"><img src="09.jpg"><img src="10.jpg"><img src="11.jpg"><img src="12.jpg"> <img src="14.jpg"><img src="15.jpg">
+				
+
+
+			</div>
+
+			
 			
 		</div>
 
-		<div class="contact">
+		<div class="contact" id="contact">
 			<p>This is Contact Section </p> 
 			
 		</div>
@@ -102,5 +123,7 @@
 
 
 	</div>
+	
+
 </body>
 </html>
